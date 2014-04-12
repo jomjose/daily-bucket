@@ -1,0 +1,29 @@
+body {
+    font: 100% sans-serif;
+    padding: 0;
+    margin: 10px;
+    color: #333;
+    background-color: #fff;
+}
+ul {
+    float: left;
+    width: 100%;
+    padding: 0;
+    margin: 0 0 2em 0;
+    list-style-type: none;
+}
+li {
+    float: left;
+    width: 33.3%;
+    padding: 0;
+    margin: 0;
+    background-color: #000;
+    border: 10px solid #fff;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+li a {
+    display: block;
+    width: 100%;
+    overflow: hidden;
+}

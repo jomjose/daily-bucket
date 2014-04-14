@@ -3,5 +3,7 @@ daily-bucket
 
 This bucket contains my daily experiments and hacks
 
-Maintaining image aspect ratios
-jQuery autocomplete
+<ul>
+<li>Maintaining image aspect ratios</li>
+<li>jQuery autocomplete</li>
+</ul>

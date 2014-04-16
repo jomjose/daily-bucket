@@ -1,3 +1,5 @@
+/* Applying background cover */
+
 html { 
   background: url(https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcSvctt0I--skoKQVfuVt-i4Et6vQ5ve7lXPkLy9sTElCWLKh1Ps) no-repeat center center fixed; 
   -webkit-background-size: cover;
@@ -5,3 +7,11 @@ html {
   -o-background-size: cover;
   background-size: cover;
 }
+
+/*  
+    We can do this purely through CSS thanks to the background-size property now in CSS3.
+    We'll use the html element (better than body as it's always at least the height of the browser window).
+    We set a fixed and centered background on it, then adjust it's size using background-size set to the cover keyword.
+    
+*/
+

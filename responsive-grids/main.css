@@ -1,0 +1,42 @@
+</style>
+
+<meta name=viewport content="width=device-width, minimum-scale=1.0, maximum-scale=1.0">
+
+<style>
+/**
+ * These demo styles sit on top of inuit.css
+ * github.com/csswizardry/inuit.css/blob/master/inuit.css/generic/_widths.scss#L98
+ */
+
+html{
+    font:1em/1.5 Georgia, serif;
+    padding:5%;
+    background-color:#fff;
+    color:#333;
+}
+.demo-block{
+    padding:0.5em;
+    background-color:#4a8ec2;
+    color:#fff;
+    border-radius:4px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+*{
+    -webkit-transition:0.2s width;
+       -moz-transition:0.2s width;
+            transition:0.2s width;
+}

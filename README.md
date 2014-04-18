@@ -8,4 +8,6 @@ This bucket contains my daily experiments and hacks
 <li>jQuery autocomplete</li>
 <li>Basic animation using js</li>
 <li>Background image responsive</li>
+<li>Typing animation</li>
+<li>Responsive grids</li>
 </ul>

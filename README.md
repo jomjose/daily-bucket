@@ -10,4 +10,6 @@ This bucket contains my daily experiments and hacks
 <li>Background image responsive</li>
 <li>Typing animation</li>
 <li>Responsive grids</li>
+<li>Basic animation using css3</li>
+<li>Basic animation using css sprite</li>
 </ul>

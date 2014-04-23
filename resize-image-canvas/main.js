@@ -1,3 +1,8 @@
+//We need to be able to resize our image to a certain specification, and a canvas can do that no problem.
+
+//Say our requirements are to ensure that an image is no taller than, say, 100 pixels no matter what the original height was.
+
+
 var MAX_HEIGHT = 100;
 function render(src){
 	var image = new Image();

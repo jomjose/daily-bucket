@@ -12,4 +12,5 @@ This bucket contains my daily experiments and hacks
 <li>Responsive grids</li>
 <li>Basic animation using css3</li>
 <li>Basic animation using css sprite</li>
+<li>Resize image using canvas</li>
 </ul>

@@ -13,4 +13,5 @@ This bucket contains my daily experiments and hacks
 <li>Basic animation using css3</li>
 <li>Basic animation using css sprite</li>
 <li>Resize image using canvas</li>
+<li>Lifted corners using css3</li>
 </ul>

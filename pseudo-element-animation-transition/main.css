@@ -1,0 +1,62 @@
+div {
+    border: 1px solid black;
+    margin: 20px;
+    padding: 20px;
+    text-align: center;
+    font: bold 18px Sans-Serif;
+    color: #ccc;
+    position: relative;
+}
+div:first-child {
+    border: 0;
+    color: black;
+}
+#animate:before, #transition:before {
+    content:"";
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 20px;
+    height: 100%;
+    background: red;
+}
+#transition:before {
+    -webkit-transition: all 0.3s ease-out;
+    -moz-transition: all 0.3s ease-out;
+    -ms-transition: all 0.3s ease-out;
+    -o-transition: all 0.3s ease-out;
+    transition: all 0.3s ease-out;
+}
+#transition:hover:before {
+    left: 100%;
+    margin-left: -20px;
+    background: green;
+}
+@-moz-keyframes move {
+    0% {
+        left: 0;
+        margin-left: 0;
+        background: red;
+    }
+    100% {
+        left: 100%;
+        margin-left: -20px;
+        background: green;
+    }
+}
+@-webkit-keyframes move {
+    0% {
+        left: 0;
+        margin-left: 0;
+        background: red;
+    }
+    100% {
+        left: 100%;
+        margin-left: -20px;
+        background: green;
+    }
+}
+#animate:before {
+    -webkit-animation: move 5s ease alternate infinite;
+    -moz-animation: move 5s ease alternate infinite;
+}

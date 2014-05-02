@@ -1,0 +1,57 @@
+table {
+    border-collapse: collapse;
+    overflow: hidden;
+    z-index: 1;
+}
+td, th, .row, .col, .ff-fix {
+    cursor: pointer;
+    padding: 10px;
+    position: relative;
+}
+tr:last-child td {
+    border-bottom: 4px solid black;
+}
+tr, col {
+    border: 2px solid black;
+}
+th {
+    border-top: 3px solid black;
+}
+th:last-child, td:nth-child(3n) {
+    border-right: 4px solid black;
+}
+td:first-child, th:first-child {
+    border-left: 3px solid black;
+}
+td:hover {
+    border: 2px solid red;
+}
+td:hover:first-child {
+    border-left: 3px solid red;
+}
+td:hover:nth-child(3n) {
+    border-right: 4px solid red;
+}
+tr:last-child td:hover {
+    border-bottom: 4px solid red;
+}
+td:hover::before, .row:hover::before, .ff-fix:hover::before {
+    background-color: #ffa;
+    content:'\00a0';
+    height: 100%;
+    left: -5000px;
+    position: absolute;
+    top: 0;
+    width: 10000px;
+    z-index: -1;
+}
+td:hover::after, .col:hover::after, .ff-fix:hover::after {
+    background-color: #ffa;
+    content:'\00a0';
+    height: 10000px;
+    left: 0;
+    position: absolute;
+    top: -5000px;
+    width: 100%;
+    z-index: -1;
+}

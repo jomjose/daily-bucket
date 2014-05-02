@@ -1,7 +1,7 @@
 daily-bucket
 ============
 
-This bucket contains my daily experiments and hacks
+This bucket contains some of my daily experiments and hacks.
 
 <ul>
 <li>Maintaining image aspect ratios</li>
@@ -14,4 +14,7 @@ This bucket contains my daily experiments and hacks
 <li>Basic animation using css sprite</li>
 <li>Resize image using canvas</li>
 <li>Lifted corners using css3</li>
+<li>Pseudo element animation transition test</li>
+<li>Basic webkit animation</li>
+<li>Higlight content in tables</li>
 </ul>

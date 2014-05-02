@@ -16,5 +16,5 @@ This bucket contains some of my daily experiments and hacks.
 <li>Lifted corners using css3</li>
 <li>Pseudo element animation transition test</li>
 <li>Basic webkit animation</li>
-<li>Higlight content in tables</li>
+<li>Highlight selected content in tables</li>
 </ul>

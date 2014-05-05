@@ -1,0 +1,15 @@
+.buttons { width: 90%; }
+		.grilla th, td {border: 0 !important; padding: 3px;}
+		.grilla tr {border: 1px solid #ddd;}
+		.grilla th {background-color: #fff; color: #4e575b; }
+		.grilla tbody tr {background-color: #fff; color: #888;}
+		.grilla tbody tr:nth-child(2n+1) {background-color: #f8f8f8; color: #888;}
+		.grilla tbody tr td {border-left: 1px solid #ddd !important;border-right: 1px solid #ddd !important;}
+		.grilla tbody tr td:first-child {border-left: 0;}
+		.grilla tbody tr td:last-child {border-right: 0;}
+		.list .grilla { min-wdith: 480px; width: 80%; max-width: 700px; }
+
+		@media print{
+		    body > header, .buttons, .title {display: none!important;}
+		    .list {background-color: #fff!important; color: #000!important;}
+		}

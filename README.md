@@ -17,4 +17,6 @@ This bucket contains some of my daily experiments and hacks.
 <li>Pseudo element animation transition test</li>
 <li>Basic webkit animation</li>
 <li>Highlight selected content in tables</li>
+<li>Controlling the tables using javascript</li>
+<li>Text shadow grows</li>
 </ul>

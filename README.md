@@ -18,5 +18,6 @@ This bucket contains some of my daily experiments and hacks.
 <li>Basic webkit animation</li>
 <li>Highlight selected content in tables</li>
 <li>Controlling the tables using javascript</li>
+<li>Rotating dashed border</li>
 <li>Text shadow grows</li>
 </ul>

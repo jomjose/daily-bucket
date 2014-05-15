@@ -1,0 +1,36 @@
+#square{
+    display: block;
+    width: 10em;
+    height: 10em;
+    background: #FF0000;
+    
+    -webkit-transition: all 1s ease-in-out 0s; /* this is so all properties animate back to default */
+    -moz-transition: all 1s ease-in-out 0s;
+    -o-transition: all 1s ease-in-out 0s;
+    transition: all 1s ease-in-out 0s;
+    
+}
+
+@-webkit-keyframes animationName {
+    0% {
+        width: 10em;
+        background: red;
+
+    }
+    50% {
+        width: 20em;
+        background: blue;
+    }
+    100% {
+        width: 15em;
+        background: green;
+    }
+}
+
+#square:hover{
+    -webkit-animation-name: animationName;
+    -webkit-animation-duration: 1s;
+    -webkit-animation-iteration-count: 4;
+    -webkit-animation-direction: alternate;
+    -webkit-animation-timing-function: ease-in-out;
+}

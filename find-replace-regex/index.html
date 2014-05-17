@@ -1,0 +1,23 @@
+<div class="user-input with-padding">
+    <div>
+        <label for="txtReplaceWhat">Search for:</label>
+        <input id="txtReplaceWhat" class="replace" type="text" />
+        <br />
+        <label for="txtReplaceWith">Replace with:</label>
+        <textarea id="txtReplaceWith" class="replace" rows="2"></textarea>
+    </div>
+    <div style="float:left;">
+        <input id="btnReplace" type="button" value="Replace" />
+        <input id="btnClear" type="button" value="Clear" title="Clears all fields" />
+    </div>
+    <div style="float:right">
+        <input id="btnCycle" type="button" value="Cycle" title="Put the Output into the Input (for now, this is irreversible)" />
+    </div>
+    <br style="clear:both" />
+</div>
+<div class="with-padding">Input Text:
+    <br />
+    <textarea id="txtReplaceText" class="replace" rows="6" style="width:100%"></textarea>
+</div>
+<div class="with-padding">Output:</div>
+<div id="divOut" class="with-padding" style="min-height:50px;">Output goes here</div>

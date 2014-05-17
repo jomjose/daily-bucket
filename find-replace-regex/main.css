@@ -1,0 +1,25 @@
+body {
+    font-family:'Segoe UI', Calibri, Tahoma, sanserif;
+}
+div#divOut {
+    border: solid 1px #335588;
+}
+.with-padding {
+    padding:3px;
+    margin:3px;
+}
+.replace {
+    padding:2px;
+    margin:2px;
+    width: 300px;
+}
+label {
+    font-size: smaller;
+}
+div.label-wrapper {
+    float:left;
+    width:80px;
+    padding-right:5px;
+    text-align:right;
+    vertical-align:top;
+}

@@ -1,0 +1,12 @@
+div[class*='element'] {
+    background: hotpink;
+    width: 200px;
+    height: 200px;
+    float: left;
+    margin-right: 10px;
+}
+h1 {
+    font-weight: bold;
+    margin-bottom: 10px;
+    font-size: 25px
+}

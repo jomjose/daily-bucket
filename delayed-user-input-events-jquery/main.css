@@ -1,0 +1,27 @@
+body {
+    height:80%;
+    width:80%;
+    background:lightgrey;
+    padding:10%;
+    font:200 14px/18px Arial;
+}
+h1 {
+    font-size:20px;
+    line-height:30px;
+    text-shadow:1px 1px white;
+    padding-bottom:10px;
+}
+p {
+    padding-bottom:18px;
+}
+input {
+    padding:10px 2%;
+    width:96%;
+    outline:none;
+    border:solid 2px grey;
+}
+.fireEffect {
+    border-color:darkgreen;
+    color:darkgreen;
+    background:lightgreen;
+}

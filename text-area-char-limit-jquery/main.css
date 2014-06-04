@@ -1,0 +1,12 @@
+body {
+    background:lightgrey;
+    padding:20px;
+    font:200 14px/40px Arial;
+}
+textarea {
+    width:200px;
+    padding:10px;
+    color:red;
+    border:solid 2px red;
+    resize: none;
+}

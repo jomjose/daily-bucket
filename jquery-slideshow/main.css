@@ -1,0 +1,83 @@
+* {
+    margin:0;
+    padding:0
+}
+body {
+    background-color:white;
+    padding:50px;
+}
+/* Slider */
+ #slider {
+    width:300px;
+    /* dimensi lebar */
+    height:200px;
+    ;
+    /* dimensi tinggi */
+    margin:0 auto;
+    background-color:black;
+    overflow:hidden;
+    /* Sembunyikan muatan elemen '.container' yang berlebih dari '#slider' */
+}
+#slider .slide {
+    width:300px;
+    /* dimensi lebar */
+    height:200px;
+    /* dimensi tinggi */
+    float:left;
+}
+#slide-1 {
+    background-color:darkred
+}
+#slide-2 {
+    background-color:darkgreen
+}
+#slide-3 {
+    background-color:darkblue
+}
+#slide-4 {
+    background-color:gold
+}
+#slide-5 {
+    background-color:darkviolet
+}
+/* Navigasi */
+ #slider-nav {
+    display:block;
+    width:300px;
+    margin:10px auto;
+    text-align:center;
+}
+#slider-nav a {
+    display:inline-block;
+    width:15px;
+    height:15px;
+    background-color:#bbb;
+    font-size:0;
+    color:transparent;
+    overflow:hidden;
+    text-indent:-99px;
+    margin:0 2px 0 0;
+    border:2px solid white;
+    -webkit-box-shadow:0 1px 2px rgba(0, 0, 0, .4);
+    -moz-box-shadow:0 1px 2px rgba(0, 0, 0, .4);
+    box-shadow:0 1px 2px rgba(0, 0, 0, .4);
+    -webkit-border-radius:100%;
+    -moz-border-radius:100%;
+    border-radius:100%;
+}
+#slider-nav .active {
+    background-color:green;
+}
+/* Detail */
+ .slide {
+    font:normal normal 11px Arial, Sans-Serif;
+    color:black;
+}
+.slide > div {
+    padding:10px 15px;
+}
+.slide h2 {
+    margin:0 0 10px;
+    font-size:18px;
+    font-weight:bold;
+}

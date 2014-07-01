@@ -1,0 +1,36 @@
+html, body, div, p {
+    padding:0;
+    margin:0;
+}
+body {
+    font:14px/1.4 Arial, sans-serif;
+    background:#fff;
+}
+
+/* folded corner effect */
+
+ .note {
+    position:relative;
+    overflow:hidden;
+    /* hides part of the box-shadow */
+    padding:20px;
+    margin:2em 10%;
+    color:#fff;
+    background:#97C02F;
+}
+.note:before {
+    content:"";
+    position:absolute;
+    top:0;
+    right:0;
+    border-width:0 16px 16px 0;
+    border-style:solid;
+    border-color:#658E15 #fff;
+    /* css3 extras */
+    -webkit-box-shadow:0 1px 1px rgba(0, 0, 0, 0.3), -1px 1px 1px rgba(0, 0, 0, 0.2);
+    -moz-box-shadow:0 1px 1px rgba(0, 0, 0, 0.3), -1px 1px 1px rgba(0, 0, 0, 0.2);
+    box-shadow:0 1px 1px rgba(0, 0, 0, 0.3), -1px 1px 1px rgba(0, 0, 0, 0.2);
+}
+.more {
+    text-align:center;
+}

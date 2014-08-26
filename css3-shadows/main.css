@@ -1,0 +1,179 @@
+
+ h1 {
+    width: 200px;
+    margin: 0 auto;
+}
+h1 a {
+    font-size: 24px;
+    font-family:'Yanone Kaffeesatz';
+    color: rgba(0, 0, 0, 0.3);
+    text-decoration: none;
+}
+h1 a:hover {
+    color: rgba(0, 0, 0, 0.2);
+}
+p {
+    width: 200px;
+    margin: 0 auto 6px auto;
+    font-family:'Yanone Kaffeesatz';
+    font-size: 14px;
+    color: rgba(0, 0, 0, 0.3);
+}
+a {
+    color: #d79800;
+    text-decoration: none;
+}
+a:hover {
+    color: #bf4c24;
+}
+/* --- Shadow Styles --- */
+ .box {
+    position:relative;
+    background:#f1f1f1;
+    margin:0 10px;
+}
+.box:before, .box:after {
+    position:absolute;
+    z-index:-1;
+    content:"";
+}
+.one, .two, .three, .four, .five, .six, .seven {
+    margin: 40px auto;
+    width: 200px;
+    height: 125px;
+    border: 1px #888 solid;
+}
+.one {
+    margin-top: 6px;
+}
+.one:after {
+    top:50%;
+    bottom:5px;
+    width:90%;
+    left:5%;
+    border-radius:100%/20%;
+    -moz-border-radius:100%/20%;
+    -webkit-border-radius:100%/20%;
+    box-shadow:0 15px 7px rgba(0, 0, 0, 0.3);
+    -moz-box-shadow:0 15px 7px rgba(0, 0, 0, 0.3);
+    -webkit-box-shadow:0 15px 7px rgba(0, 0, 0, 0.3);
+}
+.two:after {
+    bottom:50%;
+    top:5px;
+    width:90%;
+    left:5%;
+    border-radius:100%/20%;
+    -moz-border-radius:100%/20%;
+    -webkit-border-radius:100%/20%;
+    box-shadow:0 -15px 7px rgba(0, 0, 0, 0.3);
+    -moz-box-shadow:0 -15px 7px rgba(0, 0, 0, 0.3);
+    -webkit-box-shadow:0 -15px 7px rgba(0, 0, 0, 0.3);
+}
+.three:before, .three:after {
+    top:0;
+    width:100%;
+    height: 100%;
+    border-radius:20%/100%;
+    -moz-border-radius:20%/100%;
+    -webkit-border-radius:20%/100%;
+    box-shadow:-10px 0 7px rgba(0, 0, 0, 0.3);
+    -moz-box-shadow:-10px 0 7px rgba(0, 0, 0, 0.3);
+    -webkit-box-shadow:-10px 0 7px rgba(0, 0, 0, 0.3);
+}
+.three:before {
+    box-shadow:10px 0 7px rgba(0, 0, 0, 0.3);
+    -moz-box-shadow:10px 0 7px rgba(0, 0, 0, 0.3);
+    -webkit-box-shadow:10px 0 7px rgba(0, 0, 0, 0.3);
+}
+.four:before, .four:after {
+    top:50%;
+    bottom:5px;
+    width:90%;
+    left:5%;
+    border-radius:100%/20%;
+    -moz-border-radius:100%/20%;
+    -webkit-border-radius:100%/20%;
+    box-shadow:0 15px 7px rgba(0, 0, 0, 0.3);
+    -moz-box-shadow:0 15px 7px rgba(0, 0, 0, 0.3);
+    -webkit-box-shadow:0 15px 7px rgba(0, 0, 0, 0.3);
+}
+.four:before {
+    bottom:50%;
+    top:5px;
+    box-shadow:0 -15px 7px rgba(0, 0, 0, 0.3);
+    -moz-box-shadow:0 -15px 7px rgba(0, 0, 0, 0.3);
+    -webkit-box-shadow:0 -15px 7px rgba(0, 0, 0, 0.3);
+}
+.five:after {
+    display:none;
+}
+.five:before {
+    bottom:9px;
+    left:0;
+    width:50%;
+    top:80%;
+    max-width:300px;
+    -webkit-box-shadow:0 15px 7px rgba(0, 0, 0, 0.35);
+    -moz-box-shadow:0 15px 7px rgba(0, 0, 0, 0.3);
+    box-shadow:0 15px 7px rgba(0, 0, 0, 0.3);
+    -webkit-transform:rotate(-5deg);
+    -moz-transform:rotate(-5deg);
+    -o-transform:rotate(-5deg);
+    -ms-transform:rotate(-5deg);
+    transform:rotate(-5deg);
+}
+.five:before {
+    left:0;
+}
+.six:before {
+    display:none;
+}
+.six:after {
+    bottom:9px;
+    left:0;
+    width:50%;
+    top:80%;
+    max-width:300px;
+    -webkit-box-shadow:0 15px 7px rgba(0, 0, 0, 0.35);
+    -moz-box-shadow:0 15px 7px rgba(0, 0, 0, 0.3);
+    box-shadow:0 15px 7px rgba(0, 0, 0, 0.3);
+    -webkit-transform:rotate(-5deg);
+    -moz-transform:rotate(-5deg);
+    -o-transform:rotate(-5deg);
+    -ms-transform:rotate(-5deg);
+    transform:rotate(-5deg);
+}
+.six:after {
+    -webkit-transform:rotate(5deg);
+    -moz-transform:rotate(5deg);
+    -o-transform:rotate(5deg);
+    -ms-transform:rotate(5deg);
+    transform:rotate(5deg);
+    right:0;
+    left:auto;
+}
+.seven:before, .seven:after {
+    bottom:9px;
+    left:0;
+    width:50%;
+    top:80%;
+    max-width:300px;
+    -webkit-box-shadow:0 15px 7px rgba(0, 0, 0, 0.35);
+    -moz-box-shadow:0 15px 7px rgba(0, 0, 0, 0.3);
+    box-shadow:0 15px 7px rgba(0, 0, 0, 0.3);
+    -webkit-transform:rotate(-5deg);
+    -moz-transform:rotate(-5deg);
+    -o-transform:rotate(-5deg);
+    -ms-transform:rotate(-5deg);
+    transform:rotate(-5deg);
+}
+.seven:after {
+    -webkit-transform:rotate(5deg);
+    -moz-transform:rotate(5deg);
+    -o-transform:rotate(5deg);
+    -ms-transform:rotate(5deg);
+    transform:rotate(5deg);
+    right:0;
+    left:auto;
+}

@@ -1,0 +1,24 @@
+#bird {
+    width: 180px;
+    height: 123px;
+    background: url(http://www.spritely.net/images/bird-forward-back.png) no-repeat;
+    position: relative;
+}
+@-webkit-keyframes spriteanim {
+    0% {
+        background-position: 0 0;
+    }
+    33.333% {
+        background-position: -180px 0;
+    }
+    66.666% {
+        background-position: -360px 0;
+    }
+}
+.animated {
+    -webkit-animation: spriteanim 0.4s infinite steps(1);
+}
+#sprite {
+    height: 123px;
+    overflow: hidden;
+}

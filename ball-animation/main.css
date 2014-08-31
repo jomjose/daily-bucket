@@ -1,0 +1,27 @@
+@-webkit-keyframes first {
+    from {
+        top: 0px;
+    }
+    to {
+        top: 100px;
+    }
+}
+@-webkit-keyframes second {
+    from {
+        left: 0px;
+    }
+    to {
+        left: 100px;
+    }
+}
+#ball {
+    -webkit-border-radius: 60px;
+    background: #069;
+    width: 100px;
+    height: 100px;
+    position: relative;
+    -webkit-animation: first 1s ease-in 0 6 alternate;
+}
+#ball.infinite {
+    -webkit-animation: second 1s ease-in 0 infinite alternate;
+}

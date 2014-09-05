@@ -1,0 +1,48 @@
+body {
+  background: #d3d6d9;
+  font-family: arial;
+  text-align: center;
+  font-weight: bold;
+  letter-spacing: 0.21rem;
+  line-height: 1.2rem;
+  color: #666;
+  .ovalshadow {
+    position: absolute;
+    //http://lea.verou.me/css3patterns/#lined-paper
+    background-color: #fff; 
+    background-image: 
+      linear-gradient(90deg, transparent 79px, #abced4 79px, #abced4 81px, transparent 81px),
+      linear-gradient(#eee 2px, transparent 2px);
+    background-size: 100% 19px;
+    width: 50%;
+    height: 1rem;
+    padding: 20px 50px 40px;
+    text-transform: uppercase;
+    margin: auto;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    cursor: pointer;
+    &:hover {
+      &:after {
+        bottom: 5px;
+      }
+    }
+    &:after {
+      z-index: -1;
+      content: '';
+      width: 80%;
+      height: 50%;
+      position: absolute;
+      bottom: 10px;
+      left: 0;
+      right: 0;
+      margin: auto;
+      background: none;
+      @include border-radius(50%);
+      @include box-shadow(0 15px 10px rgba(0,0,0,0.3));
+      @include transition(bottom .4s);
+    }
+  }
+}

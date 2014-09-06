@@ -1,0 +1,69 @@
+@import url(http://fonts.googleapis.com/css?family=Titillium+Web:700);
+*, *:before, *:after {
+  margin:0;
+  padding:0;
+  box-sizing:border-box;
+}
+body {
+  padding-top:10%;
+  text-align:center;
+  overflow-x:hidden;
+}
+.btn-edge {
+  position:relative;
+  display:inline-block;
+  padding:1rem 2rem;
+  font-family:'Titillium Web', sans-serif;
+  font-weight:700;
+  text-decoration:none;
+  font-size:3rem;
+  color:#333;
+  background-image:
+    linear-gradient(#333,#333),
+    linear-gradient(#333,#333),
+    linear-gradient(#333,#333),
+    linear-gradient(#333,#333),
+    linear-gradient(#333,#333),
+    linear-gradient(#333,#333),
+    linear-gradient(#333,#333),
+    linear-gradient(#333,#333);
+  background-repeat:no-repeat;
+  background-size:
+    2rem 5px,
+    2rem 5px,
+    2rem 5px,
+    2rem 5px,
+    5px 2rem,
+    5px 2rem,
+    5px 2rem,
+    5px 2rem;
+  background-position:
+    0 0,
+    100% 0,
+    0 100%,
+    100% 100%;
+  box-shadow:inset 0 0 0 5px rgba(tomato, 0);
+  transition:
+    background-size 1s .4s, 
+    box-shadow .4s, 
+    color .4s;
+  transform:translateZ(0);
+  
+  &:hover {
+    color:tomato;
+  background-size:
+    100% 5px,
+    100% 5px,
+    100% 5px,
+    100% 5px,
+    5px 100%,
+    5px 100%,
+    5px 100%,
+    5px 100%;
+    box-shadow:inset 0 0 0 5px rgba(tomato, 1);
+    transition:
+    background-size 1s, 
+    box-shadow .4s .6s, 
+    color .4s .6s;
+  }
+}

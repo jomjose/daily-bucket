@@ -1,0 +1,40 @@
+body {
+  background: #1a1a1a;
+}
+@include keyframes(spinner1){
+  from {
+    @include transform(rotate(0deg));
+  } to {
+    @include transform(rotate(360deg));
+  }
+}
+@include keyframes(spinner2){
+  from {
+    @include transform(rotate(0deg));
+  } to {
+    @include transform(rotate(-360deg));
+  }
+}
+.spinner {
+  position: fixed;
+  width: 34px;
+  height: 34px;
+  top: 50%; left: 50%;
+  margin-left: -17px; margin-top: -17px;
+  &:after, &:before {
+    position: fixed;
+    content: "";
+    border: 2px solid #a1a1a1;
+    width: 32px;
+    height: 32px;
+  }
+  &:after {
+    @include animation(spinner1 2.5s linear infinite);
+  }
+  &:before {
+    width: 44px;
+    height: 44px;
+    margin-left: -6.5px;  margin-top: -6.5px;
+    @include animation(spinner2 2.5s linear infinite);
+  }
+}

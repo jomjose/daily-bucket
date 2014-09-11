@@ -1,0 +1,40 @@
+#menu-toggle {
+  cursor: pointer;
+  width: 30px;
+  height: 30px;
+  position: relative;
+}
+#menu-toggle i:before {
+  content: '';
+  width: 100%;
+  height: 20%;
+  background: green;
+  position: absolute;
+}
+#menu-toggle:not(:active) i:before {
+    
+}
+#menu-toggle i:after {
+  content: '';
+  width: 100%;
+  height: 20%;
+  background: green;
+  position: absolute;
+  top: 30%;
+  box-shadow: 0 9px 0 0 green;
+}
+#menu-toggle.active i:before {
+  -webkit-transform:rotate(45deg) translate(6px,6px);
+   -moz-transform:rotate3d(1,2,3,45deg);
+    -ms-transform:rotate3d(1,2,3,45deg);
+     -o-transform:rotate3d(1,2,3,45deg);
+        transform:rotate3d(1,2,3,45deg);;
+}
+#menu-toggle.active i:after {
+  box-shadow: 0 0;
+  -webkit-transform:rotate(-45deg);
+   -moz-transform:rotate(-45deg);
+    -ms-transform:rotate(-45deg);
+     -o-transform:rotate(-45deg);
+        transform:rotate(-45deg);
+}

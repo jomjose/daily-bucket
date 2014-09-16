@@ -1,0 +1,56 @@
+@font-face {
+  font-family: 'Electrolize';
+  font-style: normal;
+  font-weight: 400;
+  src: local('Electrolize'), local('Electrolize-Regular'), url(http://themes.googleusercontent.com/static/fonts/electrolize/v2/DDy9sgU2U7S4xAwH5thnJ4bN6UDyHWBl620a-IRfuBk.woff) format('woff');
+}
+
+
+body { 
+  background:url(http://web-sonick.zz.mu/images/BG/dark_wall.jpg);
+  text-transform: uppercase;
+  color: #fff;
+  text-align: center;
+}
+
+h1 {
+  margin-top:100px;
+  font-size:150px;
+  font-family: 'Electrolize'; 
+	text-shadow:	 1px  1px 1px #66644d,
+					 2px  2px 1px #66644d,
+					 3px  3px 1px #66644d,
+					 4px  4px 1px #66644d,
+					 5px  5px 1px #66644d,
+					 6px  6px 1px #66644d,
+					 7px  7px 1px #66644d,
+					 8px  8px 1px #66644d,
+					 9px  9px 1px #66644d,
+					10px 10px 1px #66644d,
+					11px 11px 1px #66644d,
+					12px 12px 1px #66644d,
+					13px 13px 1px #66644d,
+					14px 14px 1px #66644d,
+					15px 15px 1px #66644d,
+					16px 16px 1px #66644d,
+					17px 17px 1px #66644d,
+					18px 18px 1px #66644d,
+					19px 19px 1px #66644d,
+					20px 20px 1px #66644d,
+					21px 21px 1px #66644d,
+					22px 22px 1px #66644d,
+					23px 23px 1px #66644d,
+					24px 24px 1px #66644d,
+					25px 25px 1px #66644d,
+					26px 26px 1px #66644d,
+					27px 27px 1px #66644d,
+					28px 28px 1px #66644d,
+					29px 29px 1px #66644d,
+					30px 30px 1px #66644d;
+  
+  -webkit-transform: skewY(-25deg);
+  -moz-transform: skewY(-25deg);
+	transform: skewY(-25deg);
+  
+  -webkit-backface-visibility: hidden;
+}

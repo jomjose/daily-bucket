@@ -1,0 +1,226 @@
+* {
+  -webkit-box-sizing: border-box;
+     -moz-box-sizing: border-box;
+          box-sizing: border-box;
+}
+body {
+  margin:20px;
+  background:#252525;
+  font-size:12px;
+  font-family:Arial, sans-serif;
+}
+.col label {
+  display:block;
+  float:left;
+  font-size:10px;
+  font-family: Arial, sans-serif;
+  text-align: right;
+  width: 100px;
+  color: #999;
+  line-height: 26px;
+  vertical-align: top;
+  margin-right: 15px;
+}
+input[type="text"] {
+  padding: 0 5px;
+	width: 159px;
+	height: 24px;
+	border: 1px solid #000;
+	@include border-radius(3px);
+	@include background-clip(padding-box);
+	background-color: #000;
+	@include box-shadow(0 1px 0 #303030, inset 0 1px 1px rgba(0,0,0,.7));
+	@include background-image(linear-gradient(bottom, rgba(24,24,24,.8) 0%, rgba(26,26,26,.8) 94.73%, rgba(0,0,0,.8) 100%));
+  @extend .input;
+  &:focus {
+    @extend .field-focus;
+  }
+}
+textarea {
+	width: 260px;
+  padding:5px;
+  margin:0;
+	height: 104px;
+	border: 1px solid #000;
+	@include border-radius(3px);
+	@include background-clip(padding-box);
+	background-color: #000;
+	@include box-shadow(0 1px 0 #303030, inset 0 1px 1px rgba(0,0,0,.7));
+	@include background-image(linear-gradient(bottom, rgba(24,24,24,.8) 0%, rgba(26,26,26,.8) 94.73%, rgba(0,0,0,.8) 100%));
+  @extend .input;
+  &:focus {
+    @extend .field-focus;
+  }
+}
+button {
+  -webkit-transition: box-shadow 0.3s linear;
+     -moz-transition: box-shadow 0.3s linear;
+          transition: box-shadow 0.3s linear;
+	width: 77px;
+	height: 24px;
+	border: 1px solid #000;
+	@include border-radius(3px);
+	@include background-clip(padding-box);
+	background-color: #000;
+	@include box-shadow(0 2px 0 #000, inset 0 1px 0 rgba(255,255,255,.15), inset 0 0 0 1px rgba(255,255,255,.05));
+	@include background-image(linear-gradient(bottom, rgba(0,0,0,.8) 0%, rgba(32,32,32,.8) 69.68%, rgba(36,36,36,.8) 70.43%, rgba(62,62,62,.8) 100%));
+  color: #cfcfcf;
+	font-family: "Arial";
+	font-size: 10px;
+	font-weight: bold;
+	@include text-shadow(0 -1px 0 #000);
+  cursor:pointer;
+  &:hover,
+  &:focus{
+	  color: #31ebfb;
+    outline:0;
+	  font-family: "Arial";
+    text-shadow: 0 0 8px rgba(50,235,254,.49),0 0 7px rgba(50,235,254,.49),0 0 6px rgba(50,235,254,.49);
+
+  }
+  &:active {
+	  border: 1px solid #000;
+	  @include border-radius(3px);
+	  @include background-clip(padding-box);
+	  background-color: #000;
+	  @include box-shadow(0 1px 0 #303030, inset 0 0px 1px rgba(0,0,0,.7), inset 0 0 0 1px rgba(255,255,255,.05));
+	  @include background-image(linear-gradient(bottom, rgba(24,24,24,.8) 0%, rgba(26,26,26,.8) 94.73%, rgba(0,0,0,.8) 100%));
+  }
+  &[disabled]{
+    color: #2e2e2e;
+    cursor:auto;
+	  background: #151515;
+	  @include text-shadow(0 -1px 0 #000);
+	  @include box-shadow(0 2px 0 #000, inset 0 1px 0 rgba(255,255,255,.15), inset 0 0 0 1px rgba(255,255,255,.05));
+  }
+}
+.input {
+  color: #545454;
+	font-family: "Arial";
+	font-size: 10px;
+	font-weight: bold;
+	@include text-shadow(0 -1px 0 #000);
+}
+.field-focus {
+  outline:0;
+  background: #000;
+	@include box-shadow(0 1px 0 #303030, inset 0 1px 1px rgba(0,0,0,.7));
+  color: #cfcfcf;
+  @include text-shadow(0 -1px 0 #000);
+}
+input[type=checkbox] {
+  opacity: 0;
+  position:absolute;
+  & + label {
+    position:relative;
+    cursor: pointer;
+    color: #cfcfcf;
+	  font-family: "Arial";
+	  font-size: 10px;
+	  font-weight: bold;
+	  @include text-shadow(0 -1px 0 #000);
+    float: none;
+    display:inline;
+    &::before {
+      margin-top: 5px;
+      margin-right: 8px;
+      content: " ";
+      display: inline-block;  
+      width: 14px;
+	    height: 14px;
+	    border: 1px solid #000;
+	    @include border-radius(3px);
+	    @include background-clip(padding-box);
+	    background-color: #000;
+	    @include box-shadow(0 2px 0 #000, inset 0 1px 0 rgba(255,255,255,.15), inset 0 0 0 1px rgba(255,255,255,.05));
+	    @include background-image(linear-gradient(bottom, rgba(14,14,14,.8) 0%, rgba(39,39,39,.8) 69.68%, rgba(43,43,43,.8) 70.43%, rgba(68,68,68,.8) 100%));
+    }
+  }
+  &:checked + label {
+    &:before {
+      border: 1px solid #000;
+	    @include border-radius(3px);
+	    @include background-clip(padding-box);
+	    background-color: #000;
+	    @include box-shadow(0 1px 0 #303030, inset 0 1px 1px rgba(0,0,0,.7), inset 0 0 0 1px rgba(255,255,255,.05));
+    	@include background-image(linear-gradient(bottom, rgba(24,24,24,.8) 0%, rgba(26,26,26,.8) 94.73%, rgba(0,0,0,.8) 100%));
+    }
+    &:after {
+      color:#31ebfb;
+    	@include text-shadow(0 -1px 0 #000, 0 0 5px rgba(50,235,254,1));
+      display: inline-block;
+      content:"\2714";
+      position:absolute;
+      left:4px;
+      top:0px;
+      line-height: 10px;
+      font-size:8px;
+    }
+  }
+  &:focus + label {
+    @include text-shadow(
+      0 -1px 0 #000,
+      0 0 5px rgba(50,235,254,1),
+      0 0 10px rgba(50,235,254,1)
+    );
+  }
+}
+input[type=radio] {
+  opacity: 0;
+  position:absolute;
+  & + label {
+    position:relative;
+    cursor: pointer;
+    color: #cfcfcf;
+	  font-family: "Arial";
+	  font-size: 10px;
+	  font-weight: bold;
+	  @include text-shadow(0 -1px 0 #000);
+    float: none;
+    display:inline;
+    &::before {
+	    border: 1px solid #000;
+	    @include border-radius(8px);
+	    @include background-clip(padding-box);
+	    background-color: #000;
+	    @include box-shadow(0 2px 0 #000, inset 0 1px 0 rgba(255,255,255,.15), inset 0 0 0 1px rgba(255,255,255,.05));
+	    @include background-image(linear-gradient(bottom, rgba(14,14,14,.8) 0%, rgba(39,39,39,.8) 69.68%, rgba(43,43,43,.8) 70.43%, rgba(68,68,68,.8) 100%));
+      margin-top: 5px;
+      margin-right: 8px;
+      content: " ";
+      display: inline-block;
+      width: 14px;
+    	height: 14px;
+    }
+  }
+  &:checked + label {
+    &:before {
+      border: 1px solid #000;
+      @include border-radius(8px);
+      @include background-clip(padding-box);
+      background-color: #000;
+	    @include box-shadow(0 1px 0 #303030, inset 0 1px 1px rgba(0,0,0,.7), inset 0 0 0 1px rgba(255,255,255,.05));
+      @include background-image(linear-gradient(bottom, rgba(24,24,24,.8) 0%, rgba(26,26,26,.8) 94.73%, rgba(0,0,0,.8) 100%));
+    }
+    &:after {
+      width: 4px;
+    	height: 4px;
+	    @include border-radius(2px);
+    	@include background-clip(padding-box);
+    	background-color: #31ebfb;
+    	@include box-shadow(0 -1px 0 #000, 0 0 5px rgba(50,235,254,1));
+      display: inline-block;
+      content:" ";
+      position:absolute;
+      left:6px;
+      top:4px;
+    }
+  }
+  &:focus + label {
+    @include text-shadow(
+      0 -1px 0 #000,
+      0 0 5px rgba(50,235,254,1),
+      0 0 10px rgba(50,235,254,1)
+    );
+  }
+}

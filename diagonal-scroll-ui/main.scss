@@ -1,0 +1,90 @@
+$bg-color: #FDE48F;
+$fg-color: #2E1414;
+$link-color: #FF3838;
+$bq-line: #FEAB1B;
+
+body {
+  font-family: 'Open Sans', sans-serif;
+  background: $bg-color;
+  color: $fg-color;
+  opacity: 0;
+  font-weight: 300;
+  line-height: 1.2em;
+}
+
+#content {
+  width: 35em;
+  padding: 2em 0 2em 2em;
+  position: fixed;
+  left: 0;
+  top: 0;
+  
+  p, ul, ol{ 
+    margin: 0;
+    padding: 1em 0;
+  }
+   li {
+     margin: 0;
+     padding: 0;
+   }
+  
+  blockquote {
+    .wrapliner {
+      position: relative;
+      padding-left: 0;
+      &:before {
+        position: absolute;
+        content: '';
+        top: 0;
+        left: -1.5em; 
+        height: 1.2em;
+        width: 3px;
+        background: $bq-line;
+        transform: skew(47deg);
+
+      }
+    }
+  }
+  a {
+    color: $link-color;
+    &:hover {
+      color: darken($link-color, 30%);
+    }
+  }
+  
+  a, h1, h2, h3, h4, h5, h6 {
+    font-weight: 400;
+  }
+  strong {
+    font-weight: 800;
+  }
+
+}
+
+@for $i from 1 through 6 {
+  h#{$i} {
+    font-size: 1em + 1/$i;
+    margin: 0;
+    padding: 1em 0;
+  }
+}
+
+.wrapliner {
+  display: block;
+  position: relative;
+  background: none;
+  padding: 0;
+  margin: 0;
+  z-index: 1;
+  width: 100%;
+  padding: 0 100px 0 40px;
+  .wrapliner {
+    padding: 0;
+  }
+}
+@for $i from 0 to 100 {
+  .wrap_line_#{$i + 1} {
+     left: $i * 20px;
+  }
+} 
+

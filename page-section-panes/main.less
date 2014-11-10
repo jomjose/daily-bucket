@@ -1,0 +1,120 @@
+@import url(http://fonts.googleapis.com/css?family=Lato:100,300,400,700,900,100italic,300italic,400italic,700italic,900italic);
+
+/* COLOURS */
+
+@coal: #272928;
+@coal-light: #353636;
+@coal-dark: #1f201f;
+
+@cloud: #efeff0;
+@cloud-light: #fcfcfe;
+@cloud-dark: #e6e6e7;
+
+@blue: #3b99cc;
+@blue-light: #53a4d7;
+@blue-dark: #318dbe;
+
+/* END OF COLOURS */
+
+* {
+  box-sizing:border-box;
+  margin:0;
+  padding:0;
+}
+
+.web-title:hover,
+.office-title:hover,
+.back-web:hover,
+.back-office:hover {
+  cursor:pointer;
+}
+
+
+.office-title:hover {
+  background:@blue-dark;
+}
+
+.web-title:hover,
+.back-web:hover,
+.back-office:hover {
+  background:@coal-dark;
+}
+
+.web-title,
+.office-title {
+  width:50%;
+  height:100vh;
+  position:fixed;
+}
+
+.web-title {
+  background:@coal;
+  top:0;
+  left:0;
+  color:@cloud;
+}
+
+.office-title {
+  background:@blue;
+  top:0;
+  right:0;
+  color:@coal;
+}
+
+.web-title h1,
+.office-title h1 {
+  text-align:center;
+  font-family:'Lato';
+  font-weight:100;
+  font-size:5em;
+  line-height:100vh;
+}
+
+.back-web,
+.back-office {
+  display:none;
+  position:fixed;
+  width:15vh;
+  height:15vh;
+  z-index:9999;
+  background:@coal-light;
+  top:2.5vh;
+  left:2.5vh;
+  font-family:'Lato';
+  font-weight:100;
+  color:@cloud;
+  text-align:center;
+  line-height:15vh;
+  font-size:5vh;
+}
+
+/* CONTENT BLOCKS */
+
+.web-content,
+.office-content {
+  display:none;
+  position:absolute;
+  top:20vh;
+  min-height:80vh;
+  z-index:-5;
+  width:100%;
+  padding:10%;
+}
+
+.web-content {
+  background:@coal-light;
+  color:@cloud;
+}
+
+.office-content {
+  background:@blue-light;
+  color:@coal;
+}
+
+p {
+  width:50%;
+  margin:0 auto;
+  margin-bottom:20px;
+  font-size:1.25em;
+  text-align:justify;
+}

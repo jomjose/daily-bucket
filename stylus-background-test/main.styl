@@ -1,0 +1,25 @@
+*
+  padding: 0
+  margin: 0
+  box-sizing: border-box
+
+.lol
+  height: 100vh
+  background: linear-gradient(-45deg, #3a342a 0%, #9b4a1b 40%, #3a342a 100%)
+  animation: hue 3s linear infinite;
+
+@keyframes slide
+  from
+    background-position: 0 0
+
+  to
+    background-position: 100vw 0
+
+@keyframes hue
+  from
+    filter: hue-rotate(0deg)
+
+  to
+    filter: hue-rotate(360deg)
+
+

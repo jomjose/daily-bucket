@@ -1,0 +1,79 @@
+*, *:before {
+  box-sizing: border-box;
+  position: relative;
+}
+
+html, body {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background: url('http://upload.wikimedia.org/wikipedia/commons/d/d6/Half_Dome_from_Glacier_Point%2C_Yosemite_NP_-_Diliff.jpg') 50% no-repeat fixed;
+  background-size: cover;
+  font: 14px/1.4 'HelveticaNeue-Light', 'Helvetica Neue Light', 'Helvetica Neue', Helvetica, Arial, 'Lucida Grande', sans-serif;
+}
+
+h2 {
+  font-size: 1.4em;
+  font-weight: 300;
+  color: #222;
+}
+p:not(:last-child) {
+  margin-bottom: 0.6em;
+}
+p.small {
+  font-size: 0.8em;
+  color: #222;
+  text-align: center;
+}
+a {
+  text-decoration: none;
+  color: inherit;
+  border-bottom: 1px solid #888;
+}
+
+article {
+  width: 300px;
+  position: absolute;
+  top: 40px;
+  left: 40px;
+  background: inherit;
+  border: 1px solid rgba(0,0,0,0.1);
+  border-radius: 6px;
+  box-shadow: 0 8px 16px rgba(0,0,0,0.25);
+  overflow: hidden;
+
+  &:before {
+    content: '';
+    position: absolute;
+    top: 0; 
+    left: 0; 
+    right: 0; 
+    bottom: 0;
+    background: inherit;
+    -webkit-filter: blur(10px) saturate(2);
+  }
+  
+  .title {
+    padding: 8px;
+    background: rgba(235,235,235,0.85);
+    border-bottom: 1px solid rgba(0,0,0,0.1);
+    text-align: center;
+  }
+  
+  .content {
+    padding: 8px;
+    background: rgba(255,255,255,0.66);
+  }
+}
+
+.attr {
+  position: fixed;
+  right: 5px;
+  bottom: 5px;
+  font-family: 'Helvetica Neue', Helvetica, Arial, 'Lucida Grande', sans-serif;
+  font-size: 0.8em;
+  font-weight: normal;
+  color: white;
+}
